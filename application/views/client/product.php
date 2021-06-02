@@ -1,4 +1,4 @@
-    <main>
+<main>
         <div class="header-product text-center mt-5">
             <div class="container">
                 <h1>
@@ -12,21 +12,23 @@
             </div>
         </div>
 
-        <section class="section-product">
+        <section class="section-product" style="margin-bottom: 100px;">
             <div class="container">
                 <div class="row justify-content-center">
 
-                    <?php foreach($products as $item):?>
+                    <?php
+                    $i =0;
+                    foreach($products as $item):?>
 
                     <div class="col-sm-6 col-md-5 col-lg-3">
-                        <div class="card-product text-center">
+                        <div class="card-product text-center" style="margin-top: 70px;">
                             <div class="product-image">
-                                <img src="<?= $item->images; ?>" width="250px" alt="">
+                                <img src="<?= $item->image; ?>" width="250px" alt="">
                             </div>
-                            <div class="product-name"><?= $item->description; ?></div>
-                            <div class="product-price"><?= $item->price; ?></div>
+                            <div class="product-name"><?= $item->nama; ?></div>
+                            <div class="product-price"><?= $item->harga; ?></div>
                             <div class="product-button-detail">
-                                <a href="<?= base_url('product/productdetail/'.$item->id); ?>" class="btn btn-product-detail">
+                                <a href="<?= base_url('product/productdetail/'. $i++ ); ?>" class="btn btn-product-detail">
                                     Lihat Product
                                 </a>
                             </div>
@@ -34,6 +36,7 @@
                     </div>
 
                     <?php endforeach; ?>
+
                 </div>                
             </div>  
         </section>

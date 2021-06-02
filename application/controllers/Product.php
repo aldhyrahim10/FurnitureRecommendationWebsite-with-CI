@@ -5,7 +5,7 @@ class Product extends CI_Controller{
 
     public function index(){
 
-        $products = file_get_contents('assets/products.json');
+        $products = file_get_contents('assets/kamartidur.json');
         $products = json_decode($products);
 
         $data = array(
@@ -21,15 +21,16 @@ class Product extends CI_Controller{
 
         $info = $this->uri->segment(3);
 
-        $products = file_get_contents('assets/products.json');
-        $products = json_decode($products);
+        $products_data = file_get_contents('assets/kamartidur.json');
 
-        $product_detail = $products;
+        $product = json_decode($products_data);
+
+        $detail = $product[$info];
 
         $data = array(
             'judul' => 'Finder | Product Detail',
             'theme_page' => 'client/product-detail',
-            'product' => $product_detail
+            'product' => $detail
         );
 
         $this->load->view('theme/client/index', $data);
