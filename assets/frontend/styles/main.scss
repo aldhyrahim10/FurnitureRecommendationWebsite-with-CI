@@ -1,0 +1,783 @@
+body{
+    background-color: #fff;
+    font-family: 'Assistant', sans-serif;
+    color: #000;
+}
+
+// Navbar
+
+.navbar-brand{
+    h3{
+        margin-left: 90px;
+        font-weight: bold;
+    }
+}
+
+.navbar-light{
+    opacity: 90%;
+    
+    .navbar-nav{
+        font-size: 20px;
+        margin-right: 90px !important;
+        .nav-link{
+            color: #000;
+            margin-right: 25px;
+        }
+        .btn-login{
+            padding: 8px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: #222831;
+            color: #fff;
+        }
+    }
+}
+
+
+// Header
+
+.header-home{
+    padding: 250px 0 ;
+    margin-top: -70px ;
+    background-image: url(../images/header2.png);
+    background-size: cover;
+
+    h1{
+        font-weight: bold;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .btn-view-product{
+        background-color: #222831;
+        color: #ffffff;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: #897853;
+            color: #ffffff;
+        }
+    }
+}
+
+// Category
+
+.section-category-heading{
+
+    h2{
+        margin-top: 40px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    p{
+        margin-top: 20px;
+        font-size: 22px;
+    }
+}
+
+.section-category-content{
+    margin-top: 40px;
+    .card-category{
+        background-size: cover;
+        min-height: 368px;
+        margin-bottom: 20px;
+
+        .category-name{
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+            padding-top: 80px;
+            padding-bottom: 160px;
+        }
+        
+        .category-button{
+
+            .btn-category-detail{
+                background-color: #222831;
+                color: #fff;
+                font-weight: bold;
+                min-width: 177px;
+                min-height: 50px;
+                font-size: 18px;
+                padding: 13px 31px 12px 30px;
+                border-radius: 10px;
+
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+// Benefit
+
+.section-benefit{
+    padding-top: 30px;
+    min-height: 400px;
+    background-color: #FEFEFE;
+
+    .section-benefit-heading{
+        h2{
+            margin-top: 30px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 22px;
+        }
+    }
+
+
+    .row{
+        margin-bottom: 100px;
+        .card-text-benefit{
+            min-width: 300px;
+            margin-top: 40px;
+            h2{
+                font-size: 22px;
+                font-weight: bold;
+                text-align: center;
+            }
+    
+            p{
+                margin-top: 30px;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .text-center{
+
+                .btn-saran{
+                    background-color: #222831;
+                    color: #fff;
+                    border-radius: 10px;
+                    width: 300px;
+                }
+            }
+        }
+    }
+    
+}
+
+.section-blog{
+    .section-blog-heading{
+        
+        h2{
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 22px;
+        }
+    }
+
+    .section-blog-content{
+        margin-top: 20px;
+        
+        .card-blog{
+            min-height: 360px;
+            .blog-name{
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .blog-date{
+                font-size: 16px;
+                font-weight: lighter;
+            }
+
+            .blog-link-detail{
+                margin-top: 10px;
+                .blog-detail{
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #222831;
+                }
+            }
+        }
+
+        .btn-blog-content{
+            width: 150px;
+            background-color: #222831;
+            color: #fff;
+            border-radius: 10px;
+            margin-bottom: 50px;
+
+            &:hover{
+                background-color: #fff;
+                color: #222831;
+                border-color: #222831;
+            }
+        }
+    }
+}
+
+// footer
+
+.section-footer{
+    background-color: #c4c4c4;
+    min-height: 95px;
+
+    .text-footer{
+        h5{
+            font-size: 24px;
+        }
+    }
+}
+
+// header
+
+.header-product{
+    
+    h1{
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
+
+// section product
+
+.section-product{
+    margin-top: 40px;
+    .btn-category{
+        padding-top: 10px;
+        width: 140px;
+        height: 45px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        border-color: #000;
+
+        &.active{
+           background-color: #222831;
+           color: #fff; 
+        }
+
+        &:hover{
+           background-color: #222831;
+           color: #fff;
+        }
+    }
+}
+
+.card-product{
+    min-height: 360px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+
+    .product-name{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .product-price{
+        font-size: 20px;
+    }
+
+    .product-button-detail{
+
+        .btn-product-detail{
+            background-color: #222831;
+            color: #fff;
+            width: 250px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 20px;
+
+            &:hover{
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+}
+
+.btn-other{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    border-color: #000;
+
+    &:hover{
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.section-reference{
+    min-height: 300px;
+    margin-top: 70px;
+    background-color: #fefefe;
+
+    .card-text-reference{
+        min-width: 300px;
+
+        h2{
+            font-weight: bold;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .btn-reference{
+        
+        .btn-reference-link{
+            width: 250px;
+            background-color: #222831;
+            color: #fff;
+            border-radius: 10px;
+            
+            &:hover{
+                background-color: #fff;
+                color: #000;
+                border-color: #000;
+            }
+        }
+    }
+}
+
+.navbar-breadcrumb{
+    margin-top: 20px;
+    
+    .breadcrumb{
+        background-color: #fff;
+        padding-left: 50px;
+        
+        .breadcrumb-item{
+
+            i{
+                margin-right: 10px;    
+            }
+
+            a{
+                color: #000;
+            }    
+        }
+    }
+}
+
+.section-product-detail{
+    min-height: 400px;
+    margin-left: 20px;
+    margin-right: auto;
+
+    .card-product-detail{
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 500px;
+        margin-right: auto;
+        .card-product-title{
+            h2{
+                text-align: left;
+                font-weight: bold;
+                font-size: 35px;
+            }
+        }
+
+        .card-product-resume{
+            .title-description{
+                text-align: left;
+                font-size: 20px;
+            }
+
+            .description{
+                width: 400px;
+                font-size: 18px;
+                text-align: justify;
+            }
+        }
+
+        .product-button{
+            text-align: left;
+            .btn-product{
+                background-color: #222831;
+                color: #fff;
+                font-weight: bold;
+                width: 120px;
+            }
+        }
+    }
+}
+
+.section-product-description-full{
+    min-height: 350px;
+
+    .card-description{
+
+        .product-description-title{
+
+            h2{
+                font-weight: bold;
+                font-size: 30px;
+            }
+        }
+    
+        .product-description-content{
+    
+            p{
+                text-align: justify;
+            }
+        }
+        
+    }
+
+    
+}
+
+
+.section-review{
+    min-height: 300px;
+
+    .review-title{
+
+        h2{
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+
+    .card-review{
+        background-color: #c4c4c4;
+        min-height: 150px;  
+        border-radius: 50px;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 20px;
+        
+        .card-review-name{
+
+            h4{
+                font-size: 20px;
+                font-weight: bold;
+                text-align: left;
+            }
+            
+        }
+
+        .card-review-content{
+
+            p{
+                font-size: 18px;
+                text-align: justify;
+            }
+        }
+    }
+
+    .btn-other{
+        background-color: #222831;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+
+.header-blog{
+    margin-top: 30px;
+
+    h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .search-form{
+        min-width: 900px;
+        height: 40px;
+        padding-left: 30px;
+    }
+}
+
+.section-blog{
+    margin-top: 20px;
+    .card-blog{
+        margin-top: 30px;
+        
+        .card-blog-title{
+            
+            h4{
+                font-size: 20px;
+                font-weight: bold;
+                text-align: justify;
+            }
+        }
+
+        .card-blog-content{
+
+            p{
+                font-size: 18px;
+                text-align: justify;
+            }
+        }
+
+        .card-blog-date{
+
+            p{
+                margin-top: -15px;
+                font-size: 16px;
+                font-weight: lighter;
+            }
+        }
+        
+        .card-blog-detail{
+            text-align: right;
+            margin-top: -15px;
+            a{
+                
+                font-size: 18px;
+                font-weight: bold;
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .btn-other{
+        width: 150px;
+        background-color: #fff;
+        border-color: #000;
+        color: #000; 
+        font-weight: bold;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
+
+.section-about{
+    min-height: 300px;
+
+    h1{
+        margin-top: 80px;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p{
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.section-team{
+    background-color: #e6e6e6;
+    .section-team-heading{
+        h2{
+            padding-top: 40px;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    }
+
+    .card-team{
+        border-color: black;
+        border-radius: 10px;
+        width: 270px;
+        height: 360px;
+
+        .section-team-content{
+            
+            img{
+                margin-top: 45px;    
+            }
+
+            h3{
+                margin-top: 35px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            p{
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.section-suggestion{
+
+    .section-suggestion-heading{
+
+        h2{
+            margin-top: 40px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .section-suggestion-form{
+        min-height: 600px;
+        .card-form{
+            margin-left: auto;
+            margin-right: auto;
+
+            h3{
+                padding-top: 40px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            form{
+                margin-top: 40px;
+
+                .btn-submit{
+                    background-color: #222831;
+                    color: #fff;
+                    width: 150px;
+                    border-radius: 10px;
+
+                    &:hover{
+                        background-color: #fff;
+                        color: #222831;
+                        border-color: #222831;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-content-detail{
+
+    .image-content{
+
+        width: 1345px;
+        height: 500px;
+    }
+
+    .heading-content{
+
+        h1{
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .author{
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 20px;
+        }
+        
+    }
+}
+
+.card-content{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.section-recommend{
+     margin-top: 70px;
+    .recommend-heading{
+
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+.section-recommend-form{
+    margin-bottom: 100px;
+
+    .form-group{
+
+        margin-left: 250px;
+        margin-right: auto;
+    }
+
+    .btn-recommend{
+        border-radius: 10px;
+        margin-top: 30px;
+        width: 200px;
+        background-color: #222831;
+        color: #fff;
+
+        &:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    }   
+}
+
+.section-guest-heading{
+    margin-top: 50px;
+
+    .guest-heading-title{
+
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .guest-heading-desc{
+
+        font-size: 20px;
+    }
+}
+
+.section-list-guest{
+    margin-top: 50px;
+    min-height: 400px;
+    .card{
+        margin-left: auto;
+        margin-right: auto;
+        .card-header{
+
+            .card-title{
+
+                h4{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.section-list-result{
+
+    margin-bottom: 100px;
+}
