@@ -31,9 +31,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach($feedback as $item) :?>
+                                <?php 
+                                $i= 1;
+
+                                foreach($feedback as $item) :?>
                                 <tr>
-                                    <td><?= $item['id'] ;?></td>
+                                    <td><?= $i++ ;?></td>
                                     <td><?= $item['name'] ;?></td>
                                     <td><?= $item['isi'] ;?></td>
                                 </tr>

@@ -15,9 +15,23 @@ class Recommendation extends CI_Controller {
 
     public function result(){
 
+        $products_data = file_get_contents('assets/data.json');
+
+        $product = json_decode($products_data);
+
+        $kategori = $this->input->post('category');
+        $panjang = $this->input->post('panjang');
+        $lebar = $this->input->post('lebar');
+        $harga = $this->input->post('harga');
+
         $data = array(
             'judul' => 'Finder | Result',
-            'theme_page' => 'client/result'
+            'theme_page' => 'client/result',
+            'kategori' => $kategori,
+            'panjang' => $panjang,
+            'lebar' => $lebar,
+            'harga' => $harga,
+            'product' => $product
         );
 
         $this->load->view('theme/client/index', $data);

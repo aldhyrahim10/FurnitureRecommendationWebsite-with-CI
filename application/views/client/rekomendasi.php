@@ -16,36 +16,32 @@
 
         <section class="section-recommend-form">
             <div class="container">
-                <form action="#" method="post">
-                    <div class="form-group">
+                <form action="<?= base_url('recommendation/result') ;?>" method="post">
+                    <!-- <div class="form-group">
                         <label for="">Kategori</label>
                         <select class="form-control col-lg-8" name="category" id="category">
                             <option value="">--Pilih Ruangan--</option>
-                            <option value="">Ruang 1</option>
-                            <option value="">Ruang 2</option>
-                            <option value="">Ruang 3</option>
-                            <option value="">Ruang 4</option>
+                            <option value="Ruang Tamu">Ruang Tamu</option>
+                            <option value="Ruang Keluarga">Ruang Keluarga</option>
+                            <option value="Kamar Tidur">Ruang Tidur</option>
+                            <option value="Ruang Dapur">Ruang Dapur</option>
+                            <option value="Ruang Makan">Ruang Makan</option>
+                            <option value="Kamar Mandi">Ruang Mandi</option>
+                            <option value="Luar Ruang<">Luar Ruang</option>
+                            <option value="Perkantoran">Kantor</option>
                         </select>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="">Panjang Furniture</label>
+                        <input type="number" class="form-control col-lg-8" name="panjang" id="panjang" placeholder="Dalam Satuan CM">
                     </div>
                     <div class="form-group">
-                        <label for="">Luas Ruangan</label>
-                        <select id="ruangan" class="form-control col-lg-8" name="ruangan">
-                            <option value="">--Pilih Luas Ruangan--</option>
-                            <option value="">Luas 1</option>
-                            <option value="">Luas 2</option>
-                            <option value="">Luas 3</option>
-                            <option value="">Luas 4</option>
-                        </select>
+                        <label for="">Lebar Furniture</label>
+                        <input type="number" class="form-control col-lg-8" name="lebar" id="lebar" placeholder="Dalam Satuan CM">
                     </div>
                     <div class="form-group">
-                        <label for="">Kisaran Harga</label>
-                        <select id="ruangan" class="form-control col-lg-8" name="ruangan">
-                            <option value="">--Pilih Kisaran Harga--</option>
-                            <option value="">Harga 1</option>
-                            <option value="">Harga 2</option>
-                            <option value="">Harga 3</option>
-                            <option value="">Harga 4</option>
-                        </select>
+                        <label for="">Harga</label>
+                        <input type="number" class="form-control col-lg-8" name="harga" id="harga" placeholder="Dalam Satuan Rupiah (ex 500000)">
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-recommend">Cari Furniture</button>

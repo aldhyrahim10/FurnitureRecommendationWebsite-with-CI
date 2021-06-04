@@ -6,33 +6,37 @@ class Content extends CI_Controller{
     public function __construct(){
         parent::__construct();
 
-        // if (empty($this->session->userdata('nip'))) {
-        //     redirect('user/login');
-        // }
+        if (empty($this->session->userdata('nama'))) {
+            redirect('admin');
+        }
 
         $this->load->model(array('content_model'));
     }
 
     public function index(){
+        $user = $this->session->userdata('nama');
 
         $content = $this->content_model->read();
 
         $data = array(
             'judul' => 'Finder | Content',
             'theme_page' => 'admin/content/index',
-            'content' => $content
+            'content' => $content,
+            'user' => $user
         );
 
         $this->load->view('theme/admin/index', $data);
     }
 
     public function insert(){
+        $user = $this->session->userdata('nama');
         
         $this->insert_submit();
 
         $data = array(
             'judul' => 'Finder | Tambah Content',
-            'theme_page' => 'admin/content/create'
+            'theme_page' => 'admin/content/create',
+            'user' => $user
         );
 
         $this->load->view('theme/admin/index', $data);
@@ -42,6 +46,7 @@ class Content extends CI_Controller{
     
     public function insert_submit()
     {
+        $user = $this->session->userdata('nama');
         if ($this->input->post('submit') == 'submit') {
 
             //aturan validasi input login
@@ -78,7 +83,8 @@ class Content extends CI_Controller{
 					$error = array(
                         'response' => $response,
                         'judul' => 'Finder | Tambah Content',
-                        'theme_page' => 'admin/content/create'
+                        'theme_page' => 'admin/content/create',
+                        'user' => $user
                     );
     
                     $this->load->view('theme/admin/index', $error);
@@ -114,6 +120,7 @@ class Content extends CI_Controller{
 
     public function update(){
 
+        $user = $this->session->userdata('nama');
         // $this->update_submit();
 
         $id = $this->uri->segment(4);
@@ -123,7 +130,8 @@ class Content extends CI_Controller{
         $data = array(
             'judul' => 'Finder | Update Content',
             'theme_page' => 'admin/content/update',
-            'content_single' => $content_single
+            'content_single' => $content_single,
+            'user' => $user
         );
 
         $this->load->view('theme/admin/index', $data);
@@ -131,6 +139,8 @@ class Content extends CI_Controller{
     }
 
     public function update_submit(){
+
+        $user = $this->session->userdata('nama');
 
          //setting library upload
         $config['upload_path']          = './upload_folder/';
@@ -162,7 +172,8 @@ class Content extends CI_Controller{
                 'response' => $response,
                 'judul' => 'Finder | Update Content',
                 'theme_page' => 'admin/content/update',
-                'content_single' => $content_single
+                'content_single' => $content_single,
+                'user' => $user
             );
 
             $this->load->view('theme/admin/index', $error);
@@ -196,6 +207,8 @@ class Content extends CI_Controller{
     }
 
     public function delete(){
+
+        $user = $this->session->userdata('nama');
 
         $id = $this->uri->segment(4);
 

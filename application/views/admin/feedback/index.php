@@ -18,12 +18,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>id</td>
-                                    <td>nama</td>
-                                    <td>email</td>
-                                    <td>Comment</td>
-                                </tr>
+                                <?php foreach($feedback as $item) :?>
+                                    <tr>
+                                        <td><?= $item['id']; ?></td>
+                                        <td><?= $item['name']; ?></td>
+                                        <td><?= $item['email']; ?></td>
+                                        <td><?= $item['isi']; ?></td>
+                                    </tr>
+                                <?php endforeach;?>
                             </tbody>
                         </table>
                     </div>

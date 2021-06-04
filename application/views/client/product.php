@@ -1,7 +1,7 @@
 <!-- <?php
     var_dump($products);
-?>     -->
-    
+?>    
+     -->
     <main>
         <div class="header-product text-center mt-5">
             <div class="container">
@@ -24,6 +24,7 @@
             </a>    
                 <br><br>    
                 <div class="row justify-content-center">
+                    
                     <a href="<?= base_url('product') ?>" class="btn btn-category active">Semua</a>
                     <a href="<?= base_url('product/ruangtamu') ?>" class="btn btn-category">Ruang Tamu</a>
                     <a href="<?= base_url('product/ruangmakan') ?>" class="btn btn-category">Ruang Makan</a>
@@ -36,9 +37,7 @@
                 </div>
                 <div class="row justify-content-center">
 
-                    <?php
-                    $i =0;
-                    foreach($products as $item):?>
+                    <?php foreach($products as $item):?>
 
                     <div class="col-sm-6 col-md-5 col-lg-3">
                         <div class="card-product text-center" style="margin-top: 70px;">
@@ -46,9 +45,9 @@
                                 <img src="<?= $item->image; ?>" width="250px" alt="">
                             </div>
                             <div class="product-name"><?= $item->nama; ?></div>
-                            <div class="product-price"><?= $item->harga; ?></div>
+                            <div class="product-price">Rp   <?= $item->harga; ?></div>
                             <div class="product-button-detail">
-                                <a href="<?= base_url('product/productdetail/'. $i++ ); ?>" class="btn btn-product-detail">
+                                <a href="<?= base_url('product/productdetail/'. $item->id ); ?>" class="btn btn-product-detail">
                                     Lihat Product
                                 </a>
                             </div>

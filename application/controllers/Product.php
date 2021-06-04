@@ -25,12 +25,11 @@ class Product extends CI_Controller{
 
         $product = json_decode($products_data);
 
-        $detail = $product[$info];
-
         $data = array(
             'judul' => 'Finder | Product Detail',
             'theme_page' => 'client/product-detail',
-            'product' => $detail,
+            'product' => $product,
+            'info' => $info
         );
 
         $this->load->view('theme/client/index', $data);
@@ -80,7 +79,7 @@ class Product extends CI_Controller{
             'judul' => 'Finder | Ruang Tidur',
             'theme_page' => 'client/product-kategori',
             'products' => $product,
-            'kategori' => 'Ruang Tidur'
+            'kategori' => 'Kamar Tidur'
         );
 
         $this->load->view('theme/client/index', $data);
@@ -131,7 +130,7 @@ class Product extends CI_Controller{
             'judul' => 'Finder | Ruang Mandi',
             'theme_page' => 'client/product-kategori',
             'products' => $product,
-            'kategori' => 'Ruang Mandi'
+            'kategori' => 'Kamar Mandi'
         );
 
         $this->load->view('theme/client/index', $data);

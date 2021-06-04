@@ -30,9 +30,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($guest as $item) : ?>
+                                <?php 
+                                $i=1;
+                                
+                                foreach ($guest as $item) : ?>
                                 <tr>
-                                    <td><?= $item['id']; ?></td>
+                                    <td><?= $i++ ;?></td>
                                     <td><?= $item['nama'] ;?></td>
                                 </tr>
                                 <?php endforeach; ?>

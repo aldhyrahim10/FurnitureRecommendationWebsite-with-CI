@@ -29,7 +29,7 @@
                         <div class="card-category text-center" style="background-image: url(assets/frontend/images/tamu.png);">
                             <div class="category-name">Ruang Tamu</div>
                             <div class="category-button">
-                                <a href="#" class="btn btn-category-detail">
+                                <a href="<?= base_url('product/ruangtamu') ?>" class="btn btn-category-detail">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -39,7 +39,7 @@
                         <div class="card-category text-center" style="background-image: url(assets/frontend/images/keluarga.png);">
                             <div class="category-name">Ruang Keluarga</div>
                             <div class="category-button">
-                                <a href="#" class="btn btn-category-detail">
+                                <a href="<?= base_url('product/ruangkeluarga') ?>" class="btn btn-category-detail">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -49,7 +49,7 @@
                         <div class="card-category text-center" style="background-image: url(assets/frontend/images/tidur.png);">
                             <div class="category-name">Ruang Tidur</div>
                             <div class="category-button">
-                                <a href="#" class="btn btn-category-detail">
+                                <a href="<?= base_url('product/ruangtidur') ?>" class="btn btn-category-detail">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -59,7 +59,7 @@
                         <div class="card-category text-center" style="background-image: url(assets/frontend/images/dapur.png);">
                             <div class="category-name">Ruang Dapur</div>
                             <div class="category-button">
-                                <a href="#" class="btn btn-category-detail">
+                                <a href="<?= base_url('product/ruangdapur') ?>" class="btn btn-category-detail">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -69,7 +69,7 @@
                         <div class="card-category text-center" style="background-image: url(assets/frontend/images/makan.png);">
                             <div class="category-name">Ruang Makan</div>
                             <div class="category-button">
-                                <a href="#" class="btn btn-category-detail">
+                                <a href="<?= base_url('product/ruangmakan') ?>" class="btn btn-category-detail">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -79,7 +79,7 @@
                         <div class="card-category text-center" style="background-image: url(assets/frontend/images/mandi.png);">
                             <div class="category-name">Ruang Mandi</div>
                             <div class="category-button">
-                                <a href="#" class="btn btn-category-detail">
+                                <a href="<?= base_url('product/ruangmandi') ?>" class="btn btn-category-detail">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -89,7 +89,7 @@
                         <div class="card-category text-center" style="background-image: url(assets/frontend/images/luar.png);">
                             <div class="category-name">Luar Ruangan</div>
                             <div class="category-button">
-                                <a href="#" class="btn btn-category-detail">
+                                <a href="<?= base_url('product/luarruang') ?>" class="btn btn-category-detail">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -99,7 +99,7 @@
                         <div class="card-category text-center" style="background-image: url(assets/frontend/images/kantor.png);">
                             <div class="category-name">Kantor</div>
                             <div class="category-button">
-                                <a href="#" class="btn btn-category-detail">
+                                <a href="<?= base_url('product/perkantoran') ?>" class="btn btn-category-detail">
                                     Lihat Detail
                                 </a>
                             </div>

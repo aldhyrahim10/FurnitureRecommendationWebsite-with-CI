@@ -1,8 +1,12 @@
     <main>
 
-    <!-- <?php
-        var_dump($product);
-    ?> -->
+<?php foreach($product as $item) : ?>
+    <?php if($item->id == $info) :?>
+        <!-- <?php
+            var_dump($item);
+        ?> -->
+
+
         <nav aria-label="breadcrumb" class="navbar-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
@@ -14,7 +18,7 @@
                 </li>
 
                 <li class="breadcrumb-item">
-                    <a href="#"><?= $product->nama ;?></a>
+                    <a href="#"><?= $item->nama ;?></a>
                 </li>
             </ol>
         </nav>
@@ -31,7 +35,7 @@
                     <div class="col-sm-8 col-md-6 col-lg-5">
                         <div class="card-image-product">
                             <center>
-                                <img src="<?= $product->image ;?>" width="450px" alt="">
+                                <img src="<?= $item->image ;?>" width="450px" alt="">
                             </center>
                         </div>
                     </div>
@@ -39,17 +43,22 @@
                         <div class="card-product-detail text-center">
                             <div class="card-product-title">
                                 <h2>
-                                    <?= $product->nama ;?>
+                                    <?= $item->nama ;?>
                                 </h2>
                             </div>
                             <div class="card-product-resume">
                                 <p class="title-description">Deskripsi Singkat</p>
                                 <p class="description">
-                                    <?= $product->desc1 ;?> 
+                                    <?= $item->desc1 ;?> 
                                 </p>
                             </div>
+                            <div class="card-product-title">
+                                <h2>
+                                    Rp <?= $item->harga ;?>
+                                </h2>
+                            </div>
                             <div class="product-button">
-                                <a href="<?= $product->url ;?>" class="btn btn-product">Pesan</a>
+                                <a href="<?= $item->url ;?>" class="btn btn-product" target="_blank">Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -66,13 +75,16 @@
                         </h2>
                     </div>
                     <div class="product-description-content">
-                       <?= $product->desc2 ;?>
+                       <?= $item->desc2 ;?>
                        <br><br>
-                       <p>Panjang : <?= $product->panjang ;?></p>
-                       <p>Lebar : <?= $product->lebar ;?></p>
-                       <p>Kategori : <?= $product->kategori ;?></p>
+                       <p>Panjang : <?= $item->panjang ;?></p>
+                       <p>Lebar : <?= $item->lebar ;?></p>
+                       <p>Kategori : <?= $item->kategori ;?></p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+<?php endif ; ?>
+<?php endforeach ;?>

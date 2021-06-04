@@ -40,7 +40,8 @@
                                 </p>
                             </div>
                         </div>
-                        <form class="form-auth-small" action="<?= base_url('admin/auth')?>" method="POST">
+                        <?= $this->session->flashdata('message');?>
+                        <form class="form-auth-small" action="<?= base_url('admin');?>" method="POST">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= set_value('email')?>">
                                 <?= form_error('email', '<small class="text-danger pl-3" style="color:red;"></small>') ;?>
