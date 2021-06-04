@@ -27,7 +27,7 @@
                                 <div class="product-name"><?= $item->nama; ?></div>
                                 <div class="product-price"><?= $item->harga; ?></div>
                                 <div class="product-button-detail">
-                                    <a href="<?= base_url('product/productdetail/'. $item->id ); ?>" class="btn btn-product-detail">
+                                    <a href="<?= base_url('product/productdetail/'. $item->id ); ?>" target="_blank" class="btn btn-product-detail">
                                         Lihat Product
                                     </a>
                                 </div>
@@ -46,7 +46,7 @@
                                 <div class="product-name"><?= $item->nama; ?></div>
                                 <div class="product-price"><?= $item->harga; ?></div>
                                 <div class="product-button-detail">
-                                    <a href="<?= base_url('product/productdetail/'. $item->id ); ?>" class="btn btn-product-detail">
+                                    <a href="<?= base_url('product/productdetail/'. $item->id ); ?>" target="_blank"  class="btn btn-product-detail">
                                         Lihat Product
                                     </a>
                                 </div>
